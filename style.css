@@ -242,6 +242,65 @@ h1 {
 .list-item .num { font-size: 12px; }
 .footnote { margin: 20px 0 0 0; font-size: 15px; color: var(--muted); max-width: 580px; }
 
+/* ---- Who rows (home) ---- */
+.who-note { margin: 0 0 28px 0; font-size: 18px; color: var(--body); max-width: 640px; }
+.who-after { margin: 28px 0 0 0; font-size: 17px; color: var(--body); max-width: 640px; }
+
+/* ---- Project links (portfolio) ---- */
+.project-links { display: flex; gap: 28px; flex-wrap: wrap; }
+
+/* ---- Service categories (services) ---- */
+.svc-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  border-top: 1px solid var(--hairline);
+  padding: 14px 0;
+}
+.svc-row:first-child { border-top: none; padding-top: 0; }
+.svc-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.svc-row p { margin: 0; }
+.svc-tools { font-size: 15px; color: var(--muted); }
+.svc-cta { margin-top: 56px; }
+
+/* ---- Email template (connect) ---- */
+.tmpl {
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 720px;
+}
+.tmpl-head {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  letter-spacing: 0.04em;
+}
+.tmpl-comment { color: var(--muted); }
+.tmpl-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 24px;
+  border-top: 1px solid var(--hairline);
+  padding: 14px 0;
+}
+.tmpl-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  color: var(--red);
+}
+
 /* ---- Connect ---- */
 .email-band {
   border-top: 2px solid var(--ink);
@@ -280,4 +339,8 @@ h1 {
   .list-item:last-child { border-bottom: 1px solid var(--hairline); }
   .email { font-size: 22px; }
   .site-footer .wrap { flex-direction: column; gap: 6px; }
+  .svc-row { grid-template-columns: 1fr; gap: 4px; }
+  .tmpl-row { grid-template-columns: 1fr; gap: 2px; }
+  .tmpl-head { flex-direction: column; gap: 4px; }
+  .project-links { gap: 20px; }
 }
