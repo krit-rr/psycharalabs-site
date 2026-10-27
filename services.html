@@ -8,125 +8,121 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Archivo:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <a class="wordmark" href="/">Psychara Labs</a>
-    <nav class="site-nav" aria-label="Main">
-      <a href="/">01 Home</a>
-      <a href="/portfolio.html">02 Portfolio</a>
-      <a href="/services.html" aria-current="page">03 Services</a>
-      <a href="/connect.html">04 Connect</a>
+<header class="pl-header">
+  <div class="pl-wrap pl-header-row">
+    <a class="pl-brand" href="/">Psychara Labs</a>
+    <nav class="pl-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/services.html" aria-current="page">Services</a>
+      <a href="/connect.html">Connect</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="section-tight">
-    <div class="wrap">
-      <p class="kicker">03 / Services</p>
-      <h1 class="inner-title">Whatever the job needs, I can probably do it.</h1>
-      <p class="sub">Perks of not fitting neatly into one lane. Even if I don't know how to do it immediately, I can learn fast. Below is a non-exhaustive list of skills I demonstrated through my most recent contract.</p>
-    </div>
+  <section class="pl-wrap pl-hero pl-hero-tight">
+    <h1 class="pl-h1">Whatever the job needs, I can probably do it.</h1>
+    <p class="pl-lead">Perks of not fitting neatly into one lane. Even if I don&rsquo;t know how to do it immediately, I can learn fast. Below is a (non-exhaustive) list of skills I demonstrated through my most recent contract.</p>
   </section>
 
-  <section class="section-end">
-    <div class="wrap">
-
-      <article class="project">
-        <div>
-          <div class="project-name">Engineering</div>
+  <section class="pl-wrap pl-section pl-folderwrap">
+    <div class="pl-tabs">
+      <a href="#case-1">Engineering</a>
+      <a href="#case-2">Data &amp; ML</a>
+      <a href="#case-3">Product &amp; Design</a>
+      <a href="#case-4">Operations</a>
+    </div>
+    <div class="pl-folder">
+      <div id="case-1" class="pl-pane">
+        <div class="pl-pane-head">
+          <h2 class="pl-h3">Engineering</h2>
         </div>
-        <div class="project-body">
-          <div class="svc-row">
-            <span class="svc-label">What I do</span>
-            <p>Develop, ship, and iterate quality code &mdash; from first commit to production.</p>
+        <div class="pl-pane-body">
+          <div class="pl-spec">
+            <p class="pl-spec-l">What I do</p>
+            <p class="pl-spec-v">Develop, ship, and iterate quality code, from first commit to production.</p>
           </div>
-          <div class="svc-row">
-            <span class="svc-label">Tools</span>
-            <p class="svc-tools">Python &middot; SQL &middot; Postgres &middot; Pydantic &middot; pytest &middot; GitHub Actions &middot; iOS app development</p>
+          <div class="pl-spec">
+            <p class="pl-spec-l">Tools</p>
+            <p class="pl-spec-v pl-spec-tools">Python &middot; SQL &middot; Postgres &middot; Pydantic &middot; pytest &middot; GitHub Actions &middot; iOS app development</p>
           </div>
-          <div class="svc-row">
-            <span class="svc-label">In practice</span>
-            <p>Wrote specs grounded in the codebase, then set up staged rollouts, a Sev1&ndash;3 bug system, and biweekly releases with E2E testing.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div>
-          <div class="project-name">Data &amp; ML</div>
-        </div>
-        <div class="project-body">
-          <div class="svc-row">
-            <span class="svc-label">What I do</span>
-            <p>Data science and outcome evaluation that informs real product decisions &mdash; not useless reports.</p>
-          </div>
-          <div class="svc-row">
-            <span class="svc-label">Tools</span>
-            <p class="svc-tools">Segment &middot; Snowflake &middot; Mixpanel &middot; model training and evaluation &middot; LLM agents (LangGraph, LangFuse) &middot; NLP</p>
-          </div>
-          <div class="svc-row">
-            <span class="svc-label">In practice</span>
-            <p>Worked across the analytics pipeline and the accuracy of payer reporting. Built a benchmark that tells an LLM's reasoning apart from recall.</p>
+          <div class="pl-spec">
+            <p class="pl-spec-l">In practice</p>
+            <p class="pl-spec-v">Wrote specs grounded in the codebase, then set up staged rollouts, a Sev1&ndash;3 bug system, and biweekly releases with E2E testing.</p>
           </div>
         </div>
-      </article>
-
-      <article class="project">
-        <div>
-          <div class="project-name">Product &amp; Design</div>
+      </div>
+      <div id="case-2" class="pl-pane">
+        <div class="pl-pane-head">
+          <h2 class="pl-h3">Data &amp; ML</h2>
         </div>
-        <div class="project-body">
-          <div class="svc-row">
-            <span class="svc-label">What I do</span>
-            <p>Interfaces grounded in how people actually experience mental health, rather than generic or flashy UX patterns.</p>
+        <div class="pl-pane-body">
+          <div class="pl-spec">
+            <p class="pl-spec-l">What I do</p>
+            <p class="pl-spec-v">Data science and outcome evaluation that informs real product decisions, not just useless reports.</p>
           </div>
-          <div class="svc-row">
-            <span class="svc-label">Tools</span>
-            <p class="svc-tools">HCI research &middot; behavioral science &middot; clinical UX &middot; product specs &middot; end-to-end product building</p>
+          <div class="pl-spec">
+            <p class="pl-spec-l">Tools</p>
+            <p class="pl-spec-v pl-spec-tools">Segment &middot; Snowflake &middot; Mixpanel &middot; model training and evaluation &middot; LLM agents (LangGraph, LangFuse) &middot; NLP</p>
           </div>
-          <div class="svc-row">
-            <span class="svc-label">In practice</span>
-            <p>Designed for structured engagement: users stick with an app when it gives them a path instead of a blank slate.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div>
-          <div class="project-name">Operations</div>
-        </div>
-        <div class="project-body">
-          <div class="svc-row">
-            <span class="svc-label">What I do</span>
-            <p>Identify potential problems and solutions before they become expensive mistakes.</p>
-          </div>
-          <div class="svc-row">
-            <span class="svc-label">Tools</span>
-            <p class="svc-tools">Release process &middot; QA and bug triage &middot; tooling evaluation &middot; risk and access audits &middot; team process design</p>
-          </div>
-          <div class="svc-row">
-            <span class="svc-label">In practice</span>
-            <p>Built a team operating system that works for neurodivergent brains &mdash; WIP limits, a decision log, risk-first syncs &mdash; and audited tech spend before anyone asked.</p>
+          <div class="pl-spec">
+            <p class="pl-spec-l">In practice</p>
+            <p class="pl-spec-v">Worked across the analytics pipeline and the accuracy of payer reporting. Built a benchmark that tells an LLM&rsquo;s reasoning apart from recall.</p>
           </div>
         </div>
-      </article>
-
-      <p class="lead svc-cta">Sound like what you need? <a class="cta" href="/connect.html">Get in touch</a></p>
-
+      </div>
+      <div id="case-3" class="pl-pane">
+        <div class="pl-pane-head">
+          <h2 class="pl-h3">Product &amp; Design</h2>
+        </div>
+        <div class="pl-pane-body">
+          <div class="pl-spec">
+            <p class="pl-spec-l">What I do</p>
+            <p class="pl-spec-v">Interfaces grounded in how people actually experience mental health, rather than generic or flashy UX patterns.</p>
+          </div>
+          <div class="pl-spec">
+            <p class="pl-spec-l">Tools</p>
+            <p class="pl-spec-v pl-spec-tools">HCI research &middot; behavioral science &middot; clinical UX &middot; product specs &middot; end-to-end product building</p>
+          </div>
+          <div class="pl-spec">
+            <p class="pl-spec-l">In practice</p>
+            <p class="pl-spec-v">Designed for structured engagement: users stick with an app when it gives them a path instead of a blank slate.</p>
+          </div>
+        </div>
+      </div>
+      <div id="case-4" class="pl-pane">
+        <div class="pl-pane-head">
+          <h2 class="pl-h3">Operations</h2>
+        </div>
+        <div class="pl-pane-body">
+          <div class="pl-spec">
+            <p class="pl-spec-l">What I do</p>
+            <p class="pl-spec-v">Identify potential problems and solutions before they become expensive mistakes.</p>
+          </div>
+          <div class="pl-spec">
+            <p class="pl-spec-l">Tools</p>
+            <p class="pl-spec-v pl-spec-tools">Release process &middot; QA and bug triage &middot; tooling evaluation &middot; risk and access audits &middot; team process design</p>
+          </div>
+          <div class="pl-spec">
+            <p class="pl-spec-l">In practice</p>
+            <p class="pl-spec-v">Built a team operating system that works for neurodivergent brains (WIP limits, a decision log, risk-first syncs), and audited tech spend before anyone asked.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>Psychara Labs</span>
-    <a href="mailto:psycharalabs@gmail.com">psycharalabs@gmail.com</a>
+<footer class="pl-footer">
+  <div class="pl-wrap pl-footer-row">
+    <p>Psychara Labs</p>
+    <p><a href="mailto:psycharalabs@gmail.com">psycharalabs@gmail.com</a></p>
   </div>
 </footer>
 
