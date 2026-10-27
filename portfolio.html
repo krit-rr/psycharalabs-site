@@ -8,110 +8,96 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Archivo:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <a class="wordmark" href="/">Psychara Labs</a>
-    <nav class="site-nav" aria-label="Main">
-      <a href="/">01 Home</a>
-      <a href="/portfolio.html" aria-current="page">02 Portfolio</a>
-      <a href="/services.html">03 Services</a>
-      <a href="/connect.html">04 Connect</a>
+<header class="pl-header">
+  <div class="pl-wrap pl-header-row">
+    <a class="pl-brand" href="/">Psychara Labs</a>
+    <nav class="pl-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/portfolio.html" aria-current="page">Portfolio</a>
+      <a href="/services.html">Services</a>
+      <a href="/connect.html">Connect</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="section-tight">
-    <div class="wrap">
-      <p class="kicker">02 / Portfolio</p>
-      <h1 class="inner-title">Selected work.</h1>
-      <p class="sub">Additional projects are in progress &mdash; I'm excited to continue working across product, technology, HCI, and design.</p>
-    </div>
+  <section class="pl-wrap pl-hero pl-hero-tight">
+    <h1 class="pl-h1">Portfolio</h1>
+    <p class="pl-lead">Additional projects are in progress! I&rsquo;m excited to continue working across product, technology, HCI, and design.</p>
   </section>
 
-  <section class="section-end">
-    <div class="wrap">
-
-      <article class="project">
-        <div>
-          <p class="tag">Personal project</p>
-          <div class="project-name">CRT Agent</div>
+  <section class="pl-wrap pl-section pl-folderwrap">
+    <div class="pl-tabs">
+      <a href="#file-1">CRT Agent</a>
+      <a href="#file-2">Mental Health Tech Startup</a>
+      <a href="#file-3">Echovert</a>
+      <a href="#file-4">Team Thalamus</a>
+      <a href="#file-5">Mental Health App</a>
+    </div>
+    <div class="pl-folder">
+      <div id="file-1" class="pl-pane">
+        <div class="pl-pane-head">
+          <p class="pl-tag">Personal project</p>
+          <h2 class="pl-h3">CRT Agent</h2>
         </div>
-        <div class="project-body">
-          <p>An agent that answers Cognitive Reflection Test problems by parsing each one into equations for a symbolic solver to execute &mdash; so recalling a memorized answer isn't an option. The benchmark changes the wording and the numbers independently to tell reasoning apart from recall.</p>
-          <div class="project-links">
-            <a class="ext" href="https://github.com/krit-rr/crt-agent">GitHub</a>
-          </div>
+        <div class="pl-pane-body">
+          <p>An agent that answers Cognitive Reflection Test problems by parsing each one into equations for a symbolic solver to execute, so recalling a memorized answer isn&rsquo;t an option. The benchmark changes the wording and the numbers independently to tell reasoning apart from recall.</p>
+          <p class="pl-link"><a href="https://github.com/krit-rr/crt-agent" target="_blank" rel="noreferrer noopener">See GitHub</a></p>
         </div>
-      </article>
-
-      <article class="project">
-        <div>
-          <p class="tag">Product engineer &middot; Current contract</p>
-          <div class="project-name">Mental Health Tech Startup</div>
+      </div>
+      <div id="file-2" class="pl-pane">
+        <div class="pl-pane-head">
+          <p class="pl-tag">Product engineer</p>
+          <h2 class="pl-h3">Mental Health Tech Startup</h2>
         </div>
-        <div class="project-body">
-          <p>My current contract, where I move between the codebase, product, and operations. I got a mobile app ready for a pilot with a major health plan, built the team's task and release process from scratch, and work across the analytics pipeline behind payer reporting.</p>
-          <div class="project-links">
-            <a class="ext" href="https://cadre.io">Cadre.io</a>
-            <a class="ext" href="https://apps.apple.com/us/app/cadre/id1597550019">App Store</a>
-            <a class="ext" href="https://play.google.com/store/apps/details?id=com.cadre">Google Play</a>
-          </div>
+        <div class="pl-pane-body">
+          <p>My current contract, where I move between the codebase, product, and operations. I got a mobile app ready for a pilot with a major health plan, built the team&rsquo;s task and release process from scratch, and work across the analytics pipeline behind payer reporting.</p>
+          <p class="pl-link"><a href="https://cadre.io" target="_blank" rel="noreferrer noopener">Cadre.io</a><a href="https://apps.apple.com/us/app/cadre/id1597550019" target="_blank" rel="noreferrer noopener">App Store</a><a href="https://play.google.com/store/apps/details?id=com.cadre" target="_blank" rel="noreferrer noopener">Google Play</a></p>
         </div>
-      </article>
-
-      <article class="project">
-        <div>
-          <p class="tag">Hackathon</p>
-          <div class="project-name">Echovert</div>
+      </div>
+      <div id="file-3" class="pl-pane">
+        <div class="pl-pane-head">
+          <p class="pl-tag">Hackathon</p>
+          <h2 class="pl-h3">Echovert</h2>
         </div>
-        <div class="project-body">
-          <p>Trained a model to flag hate speech and redesigned social media engagement mechanisms to reduce predatory amplification. Invited to present at the Governor of Pennsylvania's residence.</p>
-          <div class="project-links">
-            <a class="ext" href="https://github.com/krit-rr/echovert">GitHub</a>
-          </div>
+        <div class="pl-pane-body">
+          <p>Trained a model to flag hate speech and redesigned social media engagement mechanisms to reduce predatory amplification. Invited to present at the Governor of Pennsylvania&rsquo;s residence.</p>
+          <p class="pl-link"><a href="https://github.com/krit-rr/echovert" target="_blank" rel="noreferrer noopener">See GitHub</a></p>
         </div>
-      </article>
-
-      <article class="project">
-        <div>
-          <p class="tag">Competition for fellowship</p>
-          <div class="project-name">Team Thalamus</div>
+      </div>
+      <div id="file-4" class="pl-pane">
+        <div class="pl-pane-head">
+          <p class="pl-tag">Competition for fellowship</p>
+          <h2 class="pl-h3">Team Thalamus</h2>
         </div>
-        <div class="project-body">
+        <div class="pl-pane-body">
           <p>Kaggle competition building bias-aware models to identify ADHD in girls &mdash; a population that is chronically underdiagnosed. Focused on careful training, tuning, and evaluation.</p>
-          <div class="project-links">
-            <a class="ext" href="https://github.com/team-thalamus/btt-team-thalamus">GitHub</a>
-          </div>
+          <p class="pl-link"><a href="https://github.com/team-thalamus/btt-team-thalamus" target="_blank" rel="noreferrer noopener">See GitHub</a></p>
         </div>
-      </article>
-
-      <article class="project">
-        <div>
-          <p class="tag">Founding team member</p>
-          <div class="project-name">Digital Mental Health App</div>
+      </div>
+      <div id="file-5" class="pl-pane">
+        <div class="pl-pane-head">
+          <p class="pl-tag">Founding team member</p>
+          <h2 class="pl-h3">Digital Mental Health App</h2>
         </div>
-        <div class="project-body">
+        <div class="pl-pane-body">
           <p>Contributed across the full stack at a startup rethinking digital mental health products. Primary responsibility covered HCI design, frontend development, databases, and product iteration. The demo shows a survey flow I designed and built in a functioning iOS app.</p>
-          <div class="project-links">
-            <a class="ext" href="https://drive.google.com/file/d/1LnqcV-rXhGQrICAvUpIFPM-CnpmtDHoX/view">Watch demo</a>
-          </div>
+          <p class="pl-link"><a href="https://drive.google.com/file/d/1LnqcV-rXhGQrICAvUpIFPM-CnpmtDHoX/view" target="_blank" rel="noreferrer noopener">Watch demo</a></p>
         </div>
-      </article>
-
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <span>Psychara Labs</span>
-    <a href="mailto:psycharalabs@gmail.com">psycharalabs@gmail.com</a>
+<footer class="pl-footer">
+  <div class="pl-wrap pl-footer-row">
+    <p>Psychara Labs</p>
+    <p><a href="mailto:psycharalabs@gmail.com">psycharalabs@gmail.com</a></p>
   </div>
 </footer>
 
